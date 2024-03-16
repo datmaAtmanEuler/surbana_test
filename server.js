@@ -79,7 +79,7 @@ app.delete('locations/:id', async (req, res) => {
 			log(errorMessage);
 			return res.status(404).json({ message: errorMessage });
 		}
-		log(`Location deleted with id: ${rows[0].id}`);
+		log(`Location deleted with id: ${id}`);
 		res.status(201).json({ message: 'Location deleted successful' });
 	} catch (err) {
 		log(`Update location failed, reason: ${err.message}`);
