@@ -13,5 +13,6 @@
     	area float
     );
    - Install these middlewares: express, body-parser, pg and morgan (for HTTP request logging)
+     npm install express body-parser pg morgan
 2. Running application:
-
+   node server.js
