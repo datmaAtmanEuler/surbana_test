@@ -4,15 +4,23 @@
 1. Prerequirements:
    - Install PostgreSQL: for testing purpose I installed and set superadmin (postges) password is 123
    - Install the "ltree" extension:
-       create extension if not exists ltree;
+     <pre>
+        create extension if not exists ltree;
+     </pre>
    - create table locations with id (serial) as primary key, name (location name), address_path (store address), area (store location area in m2)
-     create table locations (
-    	id serial primary key,
-    	name varchar(255),
-    	address_path ltree,
-    	area float
-    );
+   <pre>
+       create table locations (
+       	id serial primary key,
+       	name varchar(255),
+       	address_path ltree,
+       	area float
+       );
+   </pre>
    - Install these middlewares: express, body-parser, pg and morgan (for HTTP request logging)
-     npm install express body-parser pg morgan
+      <pre>
+         npm install express body-parser pg morgan
+      </pre>
 2. Running application:
-   node server.js
+   <pre>
+      node server.js
+   </pre>
